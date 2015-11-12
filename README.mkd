@@ -1,0 +1,9 @@
+# Create VirtualBox disk image with preinstalled Debian
+
+This installation runs debootstrap on a VirtualBox disk image.
+It consists of four scripts:
+
+ - *create-vbox.sh* creates a VM with an empty disk image;
+ - *mount-vbox.sh* mounts the disk image, also installs GRUB to it;
+ - *install-debian.sh* installs Debian to the mounted image;
+ - *umount-vbox.sh* does some cleanup. 

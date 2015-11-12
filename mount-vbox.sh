@@ -17,3 +17,5 @@ printf "n\np\n1\n\n\na\n1\nw\n" | fdisk /dev/nbd0
 mkfs.ext4 /dev/nbd0p1
 mkdir "$SCRIPT_DIR/mnt"
 mount /dev/nbd0p1 "$SCRIPT_DIR/mnt" 
+
+grub2-install /dev/nbd0
